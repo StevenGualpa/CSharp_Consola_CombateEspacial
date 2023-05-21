@@ -1,0 +1,15 @@
+C:\Proyectos\C# Consola\CombateEspacial\CombateEspacial\CombateEspacial\bin\Debug\net6.0\CombateEspacial.exe
+C:\Proyectos\C# Consola\CombateEspacial\CombateEspacial\CombateEspacial\bin\Debug\net6.0\CombateEspacial.deps.json
+C:\Proyectos\C# Consola\CombateEspacial\CombateEspacial\CombateEspacial\bin\Debug\net6.0\CombateEspacial.runtimeconfig.json
+C:\Proyectos\C# Consola\CombateEspacial\CombateEspacial\CombateEspacial\bin\Debug\net6.0\CombateEspacial.dll
+C:\Proyectos\C# Consola\CombateEspacial\CombateEspacial\CombateEspacial\bin\Debug\net6.0\CombateEspacial.pdb
+C:\Proyectos\C# Consola\CombateEspacial\CombateEspacial\CombateEspacial\obj\Debug\net6.0\CombateEspacial.csproj.AssemblyReference.cache
+C:\Proyectos\C# Consola\CombateEspacial\CombateEspacial\CombateEspacial\obj\Debug\net6.0\CombateEspacial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos\C# Consola\CombateEspacial\CombateEspacial\CombateEspacial\obj\Debug\net6.0\CombateEspacial.AssemblyInfoInputs.cache
+C:\Proyectos\C# Consola\CombateEspacial\CombateEspacial\CombateEspacial\obj\Debug\net6.0\CombateEspacial.AssemblyInfo.cs
+C:\Proyectos\C# Consola\CombateEspacial\CombateEspacial\CombateEspacial\obj\Debug\net6.0\CombateEspacial.csproj.CoreCompileInputs.cache
+C:\Proyectos\C# Consola\CombateEspacial\CombateEspacial\CombateEspacial\obj\Debug\net6.0\CombateEspacial.dll
+C:\Proyectos\C# Consola\CombateEspacial\CombateEspacial\CombateEspacial\obj\Debug\net6.0\refint\CombateEspacial.dll
+C:\Proyectos\C# Consola\CombateEspacial\CombateEspacial\CombateEspacial\obj\Debug\net6.0\CombateEspacial.pdb
+C:\Proyectos\C# Consola\CombateEspacial\CombateEspacial\CombateEspacial\obj\Debug\net6.0\CombateEspacial.genruntimeconfig.cache
+C:\Proyectos\C# Consola\CombateEspacial\CombateEspacial\CombateEspacial\obj\Debug\net6.0\ref\CombateEspacial.dll
