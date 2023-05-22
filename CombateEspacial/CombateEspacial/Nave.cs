@@ -21,6 +21,12 @@ namespace CombateEspacial
         public bool SobreCargaCond { get; set; }
         public float BalaEspecial { get; set; }
 
+        public List<Enemigo> Enemigos { get; set; }
+
+        public ConsoleColor ColorAux { get; set; }
+
+        public DateTime TiempoColision { get; set; }
+
         public Nave(Point posicion, ConsoleColor color, Ventana ventana)
         {
             Posicion = posicion;
@@ -29,9 +35,19 @@ namespace CombateEspacial
             Vida = 100;
             PosicionesNave = new List<Point>();
             Balas = new List<Bala>();
+            Enemigos = new List<Enemigo>();
+            ColorAux = color;
+            TiempoColision = DateTime.Now;
         }
         public void Dibujar()
         {
+            if (DateTime.Now > TiempoColision.AddMilliseconds(1000))
+            { 
+                Console.ForegroundColor = Color;
+            }
+            else
+            { Console.ForegroundColor = ColorAux; }
+
             int x = Posicion.X;
             int y = Posicion.Y;
 
@@ -88,7 +104,7 @@ namespace CombateEspacial
                    ConsoleColor.White, TipoBala.Normal);
                     Balas.Add(bala);
 
-                    SobreCarga += 1.2f;
+                    SobreCarga += 0.8f;
                     if (SobreCarga >= 100)
                     {
                         SobreCargaCond = true;
@@ -104,7 +120,7 @@ namespace CombateEspacial
                    ConsoleColor.White, TipoBala.Normal);
                     Balas.Add(bala);
 
-                    SobreCarga += 1.2f;
+                    SobreCarga += 0.8f;
                     if (SobreCarga >= 100)
                     {
                         SobreCargaCond = true;
@@ -149,7 +165,7 @@ namespace CombateEspacial
             if (SobreCarga <= 0)
                 SobreCarga = 0;
             else
-                SobreCarga -= 0.0007f;
+                SobreCarga -= 0.009f;
 
             if (SobreCarga <= 50)
                 SobreCargaCond = false;
@@ -168,7 +184,7 @@ namespace CombateEspacial
             if (BalaEspecial >= 100)
                 BalaEspecial = 100;
             else
-                BalaEspecial += 0.0007f;
+                BalaEspecial += 0.009f;
         }
         public void Mover(int velocidad)
         {
@@ -186,7 +202,7 @@ namespace CombateEspacial
         {
             for (int i = 0; i < Balas.Count; i++)
             {
-                if (Balas[i].Mover(1, VentanaC.LimiteSuperior.Y))
+                if (Balas[i].Mover(1, VentanaC.LimiteSuperior.Y,Enemigos))
                 {
                     Balas.Remove(Balas[i]);
                 }
